@@ -41,19 +41,19 @@ We’ll refer to the ‘indicator’ column of this data as indicator_data.
 c. Generate a pandas DataFrame called ‘signals’ with 2 columns:
 i. ‘timestamp’: Same as ‘timestamp’ column in ‘df’
 ii. ‘signal’: This column can have the following values:
-1. BUY (When: If indicator_data cuts close_data upwards)
-2. SELL (When: If indicator_data cuts close_data downwards)
-3. NO_SIGNAL (When: If indicator_data and close_data don’t cut
+ BUY (When: If indicator_data cuts close_data upwards)
+ SELL (When: If indicator_data cuts close_data downwards)
+ NO_SIGNAL (When: If indicator_data and close_data don’t cut
 each other)
 Example of ‘Cut Upwards’, ‘Cut Downwards’, ‘Do not cut each
 other’:
 As an example, for the below graph, if the RED line is
 close_data and GREY line is indicator_data, then:
-1. The BLUE points represent the instances when
+i. The BLUE points represent the instances when
 indicator_data has cut close_data ‘downwards’
-2. The PINK points represent the instances when
+ii. The PINK points represent the instances when
 indicator_data has cut close_data ‘upwards
-3. The YELLOW points represent when indicator_data
+iv. The YELLOW points represent when indicator_data
 and close_data don’t cut each other.
 So, there will be SELL signal for BLUE timestamps, ‘BUY’
 signal for PINK timestamp and ‘NO_SIGNAL’ for yellow
